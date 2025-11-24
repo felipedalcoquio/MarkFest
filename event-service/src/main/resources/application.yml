@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: event-service
+  datasource:
+    url: jdbc:postgresql://db:5432/eventdb
+    username: user
+    password: pass
+  jpa:
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-discovery:8761/eureka/

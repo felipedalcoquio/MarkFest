@@ -1,0 +1,9 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: chat-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-discovery:8761/eureka/

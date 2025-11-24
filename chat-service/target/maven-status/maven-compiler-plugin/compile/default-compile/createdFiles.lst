@@ -1,0 +1,5 @@
+com/markfest/chat/ChatApplication.class
+com/markfest/chat/controller/ChatController.class
+com/markfest/chat/security/JwtAuthFilter.class
+com/markfest/chat/config/SecurityConfig.class
+com/markfest/chat/config/WebSocketConfig.class
