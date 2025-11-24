@@ -1,5 +1,5 @@
-/workspaces/Markfest/chat-service/src/main/java/com/markfest/chat/security/JwtAuthFilter.java
-/workspaces/Markfest/chat-service/src/main/java/com/markfest/chat/config/WebSocketConfig.java
-/workspaces/Markfest/chat-service/src/main/java/com/markfest/chat/controller/ChatController.java
-/workspaces/Markfest/chat-service/src/main/java/com/markfest/chat/ChatApplication.java
-/workspaces/Markfest/chat-service/src/main/java/com/markfest/chat/config/SecurityConfig.java
+/workspaces/MarkFest/chat-service/src/main/java/com/markfest/chat/security/JwtAuthFilter.java
+/workspaces/MarkFest/chat-service/src/main/java/com/markfest/chat/config/SecurityConfig.java
+/workspaces/MarkFest/chat-service/src/main/java/com/markfest/chat/controller/ChatController.java
+/workspaces/MarkFest/chat-service/src/main/java/com/markfest/chat/config/WebSocketConfig.java
+/workspaces/MarkFest/chat-service/src/main/java/com/markfest/chat/ChatApplication.java

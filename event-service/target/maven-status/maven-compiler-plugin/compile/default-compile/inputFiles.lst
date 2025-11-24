@@ -1,6 +1,6 @@
-/workspaces/Markfest/event-service/src/main/java/com/markfest/event/repository/EventRepository.java
-/workspaces/Markfest/event-service/src/main/java/com/markfest/event/controller/EventController.java
-/workspaces/Markfest/event-service/src/main/java/com/markfest/event/EventApplication.java
-/workspaces/Markfest/event-service/src/main/java/com/markfest/event/security/JwtAuthFilter.java
-/workspaces/Markfest/event-service/src/main/java/com/markfest/event/model/Event.java
-/workspaces/Markfest/event-service/src/main/java/com/markfest/event/config/SecurityConfig.java
+/workspaces/MarkFest/event-service/src/main/java/com/markfest/event/config/SecurityConfig.java
+/workspaces/MarkFest/event-service/src/main/java/com/markfest/event/security/JwtAuthFilter.java
+/workspaces/MarkFest/event-service/src/main/java/com/markfest/event/controller/EventController.java
+/workspaces/MarkFest/event-service/src/main/java/com/markfest/event/model/Event.java
+/workspaces/MarkFest/event-service/src/main/java/com/markfest/event/repository/EventRepository.java
+/workspaces/MarkFest/event-service/src/main/java/com/markfest/event/EventApplication.java

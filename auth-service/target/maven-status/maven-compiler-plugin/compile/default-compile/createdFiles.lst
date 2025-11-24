@@ -1,6 +1,9 @@
 com/markfest/auth/AuthApplication.class
 com/markfest/auth/config/SecurityConfig.class
+com/markfest/auth/dto/LoginRequest.class
 com/markfest/auth/controller/AuthController.class
 com/markfest/auth/model/User.class
 com/markfest/auth/repository/UserRepository.class
 com/markfest/auth/security/JwtProvider.class
+com/markfest/auth/dto/RegisterRequest.class
+com/markfest/auth/dto/AuthResponse.class

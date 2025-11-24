@@ -1,4 +1,4 @@
-/workspaces/Markfest/notification-service/src/main/java/com/markfest/notification/security/JwtAuthFilter.java
-/workspaces/Markfest/notification-service/src/main/java/com/markfest/notification/controller/NotificationController.java
-/workspaces/Markfest/notification-service/src/main/java/com/markfest/notification/NotificationApplication.java
-/workspaces/Markfest/notification-service/src/main/java/com/markfest/notification/config/SecurityConfig.java
+/workspaces/MarkFest/notification-service/src/main/java/com/markfest/notification/controller/NotificationController.java
+/workspaces/MarkFest/notification-service/src/main/java/com/markfest/notification/security/JwtAuthFilter.java
+/workspaces/MarkFest/notification-service/src/main/java/com/markfest/notification/NotificationApplication.java
+/workspaces/MarkFest/notification-service/src/main/java/com/markfest/notification/config/SecurityConfig.java

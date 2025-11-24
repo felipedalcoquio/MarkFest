@@ -1,6 +1,9 @@
-/workspaces/Markfest/auth-service/src/main/java/com/markfest/auth/repository/UserRepository.java
-/workspaces/Markfest/auth-service/src/main/java/com/markfest/auth/controller/AuthController.java
-/workspaces/Markfest/auth-service/src/main/java/com/markfest/auth/config/SecurityConfig.java
-/workspaces/Markfest/auth-service/src/main/java/com/markfest/auth/model/User.java
-/workspaces/Markfest/auth-service/src/main/java/com/markfest/auth/security/JwtProvider.java
-/workspaces/Markfest/auth-service/src/main/java/com/markfest/auth/AuthApplication.java
+/workspaces/MarkFest/auth-service/src/main/java/com/markfest/auth/controller/AuthController.java
+/workspaces/MarkFest/auth-service/src/main/java/com/markfest/auth/security/JwtProvider.java
+/workspaces/MarkFest/auth-service/src/main/java/com/markfest/auth/AuthApplication.java
+/workspaces/MarkFest/auth-service/src/main/java/com/markfest/auth/repository/UserRepository.java
+/workspaces/MarkFest/auth-service/src/main/java/com/markfest/auth/model/User.java
+/workspaces/MarkFest/auth-service/src/main/java/com/markfest/auth/dto/LoginRequest.java
+/workspaces/MarkFest/auth-service/src/main/java/com/markfest/auth/config/SecurityConfig.java
+/workspaces/MarkFest/auth-service/src/main/java/com/markfest/auth/dto/AuthResponse.java
+/workspaces/MarkFest/auth-service/src/main/java/com/markfest/auth/dto/RegisterRequest.java
