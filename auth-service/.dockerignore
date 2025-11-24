@@ -1,0 +1,8 @@
+target
+**/target
+*.log
+.git
+.vscode
+.idea
+.DS_Store
+Dockerfile*
