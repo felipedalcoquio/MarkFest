@@ -1,90 +1,42 @@
 version: '3.8'
 
 services:
-  service-discovery:
-    build: ./service-discovery
-    container_name: service-discovery
-    ports:
-      - "8761:8761"
-
   api-gateway:
-    build: ./api-gateway
-    container_name: api-gateway
+    image: your-api-gateway-image
     ports:
-      - "8080:8080"
-    depends_on:
-      - service-discovery
+      - "8080:8080"  # Altere a porta externa se necessário
 
   auth-service:
-    build: ./auth-service
-    container_name: auth-service
+    image: auth-service-image  # Use o nome correto da sua imagem
     ports:
-      - "8081:8081"
-    depends_on:
-      - service-discovery
-      - db
-
-  event-service:
-    build: ./event-service
-    container_name: event-service
-    ports:
-      - "8082:8082"
-    depends_on:
-      - service-discovery
-      - db
-
-  participation-service:
-    build: ./participation-service
-    container_name: participation-service
-    ports:
-      - "8083:8083"
-    depends_on:
-      - service-discovery
-      - db
-
-  notification-service:
-    build: ./notification-service
-    container_name: notification-service
-    ports:
-      - "8084:8084"
-    depends_on:
-      - service-discovery
-
-  chat-service:
-    build: ./chat-service
-    container_name: chat-service
-    ports:
-      - "8085:8085"
-    depends_on:
-      - service-discovery
+      - "8081:8080"  # Altere a porta externa se necessário
 
   payment-service:
-    build: ./payment-service
-    container_name: payment-service
+    image: your-payment-service-image
     ports:
-      - "8086:8086"
-    depends_on:
-      - service-discovery
-      - db
+      - "8082:8080"  # Altere a porta externa se necessário
 
-  mailhog:
-    image: mailhog/mailhog
-    container_name: mailhog
+  chat-service:
+    image: your-chat-service-image
     ports:
-      - "1025:1025"
-      - "8025:8025"
+      - "8083:8080"  # Altere a porta externa se necessário
 
-  db:
-    image: postgres:15
-    container_name: postgres-db
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: pass
-    volumes:
-      - ./init-db:/docker-entrypoint-initdb.d
-      - postgres_data:/var/lib/postgresql/data
+  event-service:
+    image: your-event-service-image
     ports:
-      - "5432:5432"
+      - "8084:8080"  # Altere a porta externa se necessário
 
-volumes:
-  postgres_data:
+  notification-service:
+    image: your-notification-service-image
+    ports:
+      - "8085:8080"  # Altere a porta externa se necessário
+
+  participation-service:
+    image: your-participation-service-image
+    ports:
+      - "8086:8080"  # Altere a porta externa se necessário
+
+  service-discovery:
+    image: your-service-discovery-image
+    ports:
+      - "8761:8761"  # Altere a porta externa se necessário
