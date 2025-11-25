@@ -13,12 +13,12 @@ RUN groupadd -r app && useradd -r -g app app
 COPY --from=build /workspace/target/*.jar app.jar
 
 USER app
-EXPOSE 8080
+EXPOSE 8085
 
 ENV JAVA_OPTS="-Xms256m -Xmx512m"
 ENV JWT_SECRET=""
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
-  CMD curl -f http://localhost:8080/actuator/health || exit 1
+  CMD curl -f http://localhost:8085/actuator/health || exit 1
 
 ENTRYPOINT ["sh","-c","java $JAVA_OPTS -jar /app/app.jar"]

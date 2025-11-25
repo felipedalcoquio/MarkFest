@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   api-gateway:
     image: your-api-gateway-image
@@ -7,14 +5,24 @@ services:
       - "8080:8080"  # Altere a porta externa se necessário
 
   auth-service:
-    image: auth-service-image  # Use o nome correto da sua imagem
+    image: markfest-auth-service:latest
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
     ports:
       - "8081:8080"  # Altere a porta externa se necessário
+    environment:
+      - JWT_SECRET=${JWT_SECRET:-""}
 
   payment-service:
-    image: your-payment-service-image
+    image: markfest-payment-service:latest
+    build:
+      context: ./payment-service
+      dockerfile: Dockerfile
     ports:
       - "8082:8080"  # Altere a porta externa se necessário
+    environment:
+      - JWT_SECRET=${JWT_SECRET:-""}
 
   chat-service:
     image: your-chat-service-image
@@ -22,19 +30,34 @@ services:
       - "8083:8080"  # Altere a porta externa se necessário
 
   event-service:
-    image: your-event-service-image
+    image: markfest-event-service:latest
+    build:
+      context: ./event-service
+      dockerfile: Dockerfile
     ports:
       - "8084:8080"  # Altere a porta externa se necessário
+    environment:
+      - JWT_SECRET=${JWT_SECRET:-""}
 
   notification-service:
-    image: your-notification-service-image
+    image: markfest-notification-service:latest
+    build:
+      context: ./notification-service
+      dockerfile: Dockerfile
     ports:
       - "8085:8080"  # Altere a porta externa se necessário
+    environment:
+      - JWT_SECRET=${JWT_SECRET:-""}
 
   participation-service:
-    image: your-participation-service-image
+    image: markfest-participation-service:latest
+    build:
+      context: ./participation-service
+      dockerfile: Dockerfile
     ports:
       - "8086:8080"  # Altere a porta externa se necessário
+    environment:
+      - JWT_SECRET=${JWT_SECRET:-""}
 
   service-discovery:
     image: your-service-discovery-image

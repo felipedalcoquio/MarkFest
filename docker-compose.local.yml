@@ -1,4 +1,4 @@
-version: "3.8"
+
 
 services:
   payment-service:
@@ -36,4 +36,3 @@ services:
       - "8086:8080"
     environment:
       - JWT_SECRET=${JWT_SECRET:-""}
-      
